@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: azureml-examples
+metadata:
+    template: azd-init@1.9.3
+services:
+    AzureML-Samples-CSharp:
+        project: sdk\dotnet\AzureML-Samples-CSharp
+        host: containerapp
+        language: dotnet
+    basic:
+        project: cli\jobs\pipelines-with-components\pipeline_job_with_flow_as_component\basic
+        host: containerapp
+        language: python
+    basic-chat:
+        project: cli\generative-ai\promptflow\basic-chat
+        host: containerapp
+        language: python
+    batch:
+        project: sdk\dotnet\endpoints\batch
+        host: containerapp
+        language: dotnet
+    bring_your_own_data_chat_qna:
+        project: sdk\python\generative-ai\rag\code_first\flows\bring_your_own_data_chat_qna
+        host: containerapp
+        language: python
+    chat-with-index:
+        project: sdk\python\generative-ai\rag\code_first\flows\chat-with-index
+        host: containerapp
+        language: python
+    credit_defaults_model:
+        project: tutorials\get-started-notebooks\deploy\credit_defaults_model
+        host: containerapp
+        language: python
+    docker-context:
+        project: cli\jobs\single-step\scikit-learn\iris-notebook\docker-context
+        host: containerapp
+        language: python
+        docker:
+            path: Dockerfile
+    e2e-distributed-pytorch-image:
+        project: tutorials\e2e-distributed-pytorch-image
+        host: containerapp
+        language: python
+    image_build_with_reqirements:
+        project: cli\generative-ai\promptflow\deploy-flow\image_build_with_reqirements
+        host: containerapp
+        language: python
+        docker:
+            path: Dockerfile
+    imagecnn_train:
+        project: sdk\python\jobs\pipelines\2d_image_classification_with_densenet\imagecnn_train
+        host: containerapp
+        language: python
+    import:
+        project: sdk\python\foundation-models\system\import
+        host: containerapp
+        language: python
+    iris:
+        project: cli\jobs\single-step\java\iris
+        host: containerapp
+        language: java
+    langchain:
+        project: sdk\python\endpoints\online\llm\langchain
+        host: containerapp
+        language: python
+    mlflow-deployment-with-explanations:
+        project: sdk\python\responsible-ai\mlflow-deployment-with-explanations
+        host: containerapp
+        language: python
+    mlflow-model:
+        project: sdk\python\assets\model\mlflow-model
+        host: containerapp
+        language: python
+    model:
+        project: sdk\python\using-mlflow\deploy\model
+        host: containerapp
+        language: python
+    python-and-pip:
+        project: sdk\python\assets\environment\docker-contexts\python-and-pip
+        host: containerapp
+        language: python
+        docker:
+            path: Dockerfile
+    sk:
+        project: sdk\python\endpoints\online\llm\src\sk
+        host: containerapp
+        language: python
+    src:
+        project: sdk\python\jobs\single-step\scikit-learn\mnist\src
+        host: containerapp
+        language: python
+    typescript:
+        project: sdk\typescript
+        host: containerapp
+        language: ts
+    yolov5:
+        project: sdk\python\jobs\single-step\pytorch\distributed-training-yolov5\yolov5
+        host: containerapp
+        language: python

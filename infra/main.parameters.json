@@ -1,0 +1,939 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "location": {
+        "value": "${AZURE_LOCATION}"
+      },
+      "pythonAndPipExists": {
+        "value": "${SERVICE_PYTHON_AND_PIP_RESOURCE_EXISTS=false}"
+      },
+      "pythonAndPipDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "mlflowModelExists": {
+        "value": "${SERVICE_MLFLOW_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "mlflowModelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "basicChatExists": {
+        "value": "${SERVICE_BASIC_CHAT_RESOURCE_EXISTS=false}"
+      },
+      "basicChatDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "imageBuildWithReqirementsExists": {
+        "value": "${SERVICE_IMAGE_BUILD_WITH_REQIREMENTS_RESOURCE_EXISTS=false}"
+      },
+      "imageBuildWithReqirementsDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "basicExists": {
+        "value": "${SERVICE_BASIC_RESOURCE_EXISTS=false}"
+      },
+      "basicDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "irisExists": {
+        "value": "${SERVICE_IRIS_RESOURCE_EXISTS=false}"
+      },
+      "irisDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "srcExists": {
+        "value": "${SERVICE_SRC_RESOURCE_EXISTS=false}"
+      },
+      "srcDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "dockerContextExists": {
+        "value": "${SERVICE_DOCKER_CONTEXT_RESOURCE_EXISTS=false}"
+      },
+      "dockerContextDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "dockerContextExists": {
+        "value": "${SERVICE_DOCKER_CONTEXT_RESOURCE_EXISTS=false}"
+      },
+      "dockerContextDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "azureMLSamplesCSharpExists": {
+        "value": "${SERVICE_AZUREML_SAMPLES_CSHARP_RESOURCE_EXISTS=false}"
+      },
+      "azureMLSamplesCSharpDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "batchExists": {
+        "value": "${SERVICE_BATCH_RESOURCE_EXISTS=false}"
+      },
+      "batchDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "pythonAndPipExists": {
+        "value": "${SERVICE_PYTHON_AND_PIP_RESOURCE_EXISTS=false}"
+      },
+      "pythonAndPipDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "mlflowModelExists": {
+        "value": "${SERVICE_MLFLOW_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "mlflowModelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "langchainExists": {
+        "value": "${SERVICE_LANGCHAIN_RESOURCE_EXISTS=false}"
+      },
+      "langchainDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "skExists": {
+        "value": "${SERVICE_SK_RESOURCE_EXISTS=false}"
+      },
+      "skDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "importExists": {
+        "value": "${SERVICE_IMPORT_RESOURCE_EXISTS=false}"
+      },
+      "importDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "bringYourOwnDataChatQnaExists": {
+        "value": "${SERVICE_BRING_YOUR_OWN_DATA_CHAT_QNA_RESOURCE_EXISTS=false}"
+      },
+      "bringYourOwnDataChatQnaDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "chatWithIndexExists": {
+        "value": "${SERVICE_CHAT_WITH_INDEX_RESOURCE_EXISTS=false}"
+      },
+      "chatWithIndexDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "imagecnnTrainExists": {
+        "value": "${SERVICE_IMAGECNN_TRAIN_RESOURCE_EXISTS=false}"
+      },
+      "imagecnnTrainDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "yolov5Exists": {
+        "value": "${SERVICE_YOLOV5_RESOURCE_EXISTS=false}"
+      },
+      "yolov5Definition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "srcExists": {
+        "value": "${SERVICE_SRC_RESOURCE_EXISTS=false}"
+      },
+      "srcDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "srcExists": {
+        "value": "${SERVICE_SRC_RESOURCE_EXISTS=false}"
+      },
+      "srcDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "mlflowDeploymentWithExplanationsExists": {
+        "value": "${SERVICE_MLFLOW_DEPLOYMENT_WITH_EXPLANATIONS_RESOURCE_EXISTS=false}"
+      },
+      "mlflowDeploymentWithExplanationsDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "modelExists": {
+        "value": "${SERVICE_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "modelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "typescriptExists": {
+        "value": "${SERVICE_TYPESCRIPT_RESOURCE_EXISTS=false}"
+      },
+      "typescriptDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "e2eDistributedPytorchImageExists": {
+        "value": "${SERVICE_E2E_DISTRIBUTED_PYTORCH_IMAGE_RESOURCE_EXISTS=false}"
+      },
+      "e2eDistributedPytorchImageDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "creditDefaultsModelExists": {
+        "value": "${SERVICE_CREDIT_DEFAULTS_MODEL_RESOURCE_EXISTS=false}"
+      },
+      "creditDefaultsModelDefinition": {
+        "value": {
+          "settings": [
+            {
+              "name": "",
+              "value": "${VAR}",
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR} to use the value of 'VAR' from the current environment."
+            },
+            {
+              "name": "",
+              "value": "${VAR_S}",
+              "secret": true,
+              "_comment_name": "The name of the environment variable when running in Azure. If empty, ignored.",
+              "_comment_value": "The value to provide. This can be a fixed literal, or an expression like ${VAR_S} to use the value of 'VAR_S' from the current environment."
+            }
+          ]
+        }
+      },
+      "principalId": {
+        "value": "${AZURE_PRINCIPAL_ID}"
+      }
+    }
+}
